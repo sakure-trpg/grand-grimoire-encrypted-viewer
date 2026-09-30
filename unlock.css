@@ -1,0 +1,16 @@
+html.locked body > :not(.unlock-screen) { display: none !important; }
+.unlock-screen { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; overflow-y: auto; padding: 24px; background: #172739; color: #23394b; font-family: "Yu Gothic UI", "Meiryo", sans-serif; }
+.unlock-card { width: min(100%, 440px); padding: 32px; border: 1px solid #d0d9dc; border-radius: 16px; background: #fff; box-shadow: 0 20px 70px #0004; }
+.unlock-symbol { color: #b99361; font-size: 36px; line-height: 1; }
+.unlock-card h1 { margin: 12px 0; color: #172739; font-size: 25px; }
+.unlock-card p { color: #5d6c78; font-size: 14px; line-height: 1.8; }
+.unlock-card label { display: block; margin: 24px 0 8px; font-size: 13px; font-weight: 700; }
+.unlock-card input { width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid #aab9c1; border-radius: 8px; color: #172739; font: inherit; }
+.unlock-card input:focus { outline: 3px solid #38799435; border-color: #387994; }
+.unlock-card button { width: 100%; min-height: 48px; margin-top: 14px; border: 0; border-radius: 8px; background: #295d72; color: #fff; font: 700 15px "Yu Gothic UI", "Meiryo", sans-serif; cursor: pointer; }
+.unlock-card button:disabled { opacity: .6; cursor: wait; }
+.unlock-status { min-height: 1.6em; margin-bottom: 0; }
+.unlock-status.error { color: #a32828; }
+.lock-button { border: 1px solid #60748a; border-radius: 99px; padding: 7px 12px; background: transparent; color: #e1e9ef; font: 12px "Yu Gothic UI", "Meiryo", sans-serif; cursor: pointer; white-space: nowrap; }
+.lock-button:hover, .lock-button:focus-visible { border-color: #b99361; color: #fff; }
+@media (max-width: 500px) { .topbar .total-badge { display: none; } }

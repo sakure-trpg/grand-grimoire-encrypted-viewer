@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja" class="locked">
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>グランドグリモア 呪文名一覧</title>
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="unlock.css">
+  <script src="payload.js" defer></script>
+  <script src="unlock.js" defer></script>
+  <script src="landing.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-symbol" aria-hidden="true">✧</span>
+      <div>
+        <div class="eyebrow">GRAND GRIMOIRE 1・2</div>
+        <h1>呪文名一覧</h1>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <span class="total-badge" id="totalBadge">読み込み中</span>
+    </div>
+  </header>
+  <main class="landing-main">
+    <div class="list-heading">
+      <p>呪文名を選ぶと、本文と詳細を開きます。</p>
+      <span id="visibleCount" aria-live="polite"></span>
+    </div>
+    <label class="visually-hidden" for="nameFilter">呪文名で絞り込む</label>
+    <input id="nameFilter" class="name-filter" type="search" autocomplete="off" spellcheck="false" placeholder="呪文名で絞り込む">
+    <div id="spellNames" class="spell-names" aria-label="呪文名一覧"></div>
+  </main>
+</body>
+</html>
